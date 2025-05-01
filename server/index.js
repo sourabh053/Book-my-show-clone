@@ -19,12 +19,12 @@ app.use('/api/movie', movieRoutes);
 app.use('/api/theatre', theatreRoutes);
 app.use("/api/bookings", bookingRoutes);
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "/client/build")));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-    });
-  }
+// if (process.env.NODE_ENV === "production") {
+//     app.use(express.static(path.join(__dirname, "/client/build")));
+//     app.get("*", (req, res) => {
+//       res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+//     });
+//   }
 
 app.listen(3001,'0.0.0.0', () => {  //change for mobile hosting added 0.0.0.0
     console.log("Server is running on http://localhost:3001"); 
