@@ -1,0 +1,38 @@
+:root {
+    --colour-primary: #13348D;
+    --colour-secondary: #0a0a0a;
+}
+
+.bg-primary {
+    background-color: var(--colour-primary);
+}
+
+.bg-secondary {
+    background-color: var(--colour-secondary);
+}
+
+.bg-error{
+    background-color: #ff0000;
+}
+
+.bg-warning{
+    background-color: #a2840e;
+}
+
+.text-primary {
+    color: var(--colour-primary) !important;
+}
+
+.text-secondary {
+    color: var(--colour-secondary);
+}
+.border-primary {
+    border-color: var(--colour-primary);
+}
+
+.border-secondary {
+    border-color: var(--colour-secondary);
+}
+.placeholder-col .ant-input::placeholder{
+    color: #9ca3af !important;
+}
