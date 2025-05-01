@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:3001",   //change for mobile hosting added ip addres instead of localhost
+  baseURL: API_URL,   //change for mobile hosting added ip addres instead of localhost
   headers: {
     credentials: "include",
     'Content-Type': 'application/json',
